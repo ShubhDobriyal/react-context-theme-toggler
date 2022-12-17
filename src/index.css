@@ -1,0 +1,111 @@
+:root {
+  --white: #fefefe;
+  --black: #080808;
+  --bg-primary: var(--white);
+  --bg-secondary: #eaeaea;
+  --border-clr: var(--black);
+  --clr-text: var(--black);
+  --ff: "Nunito Sans", sans-serif;
+}
+
+.dark {
+  --bg-primary: var(--black);
+  --bg-secondary: #333333;
+  --border-clr: var(--white);
+  --clr-text: var(--white);
+}
+
+/* Reset css */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--ff);
+  font-size: 1rem;
+}
+
+.app {
+  background-color: var(--bg-primary);
+  color: var(--clr-text);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Flex */
+.flex {
+  display: flex;
+}
+.items-center {
+  align-items: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.gap-2 {
+  gap: 1.2rem;
+}
+.container {
+  width: min(90%, 1140px);
+  margin-inline: auto;
+}
+.bg-light {
+  background-color: var(--bg-secondary);
+}
+.shadow {
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+.py-4 {
+  padding-block: 1.4rem;
+}
+.py-8 {
+  padding-block: 2.8rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.btn {
+  border: none;
+  border: 1px solid var(--border-clr);
+  background-color: transparent;
+  border-radius: 0;
+  min-height: 40px;
+  padding-inline: 1rem;
+  color: var(--clr-text);
+  cursor: pointer;
+}
+
+.h-10 {
+  height: 10rem;
+}
+.min-w-10 {
+  min-width: 10rem;
+}
+
+.h-32 {
+  height: 22rem;
+}
+
+.mb-1 {
+  margin-bottom: 0.5rem;
+}
+
+.mt-4 {
+  margin-top: 2rem;
+}
